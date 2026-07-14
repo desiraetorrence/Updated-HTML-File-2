@@ -1,78 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desirae Torrence | Personal Bio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<body>
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
 
-    <div class="container">
+/* Body */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fdf9fa;
+    color: #333;
+    line-height: 1.6;
+    padding: 40px;
+}
 
-        <h1>Desirae Torrence</h1>
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
 
-        <p>
-            Digital Media student at the University of Central Florida with interests in
-            content creation, graphic design, social media, and digital storytelling.
-        </p>
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
 
-        <img src="https://ourculturemag.com/wp-content/uploads/2024/03/34608.jpg"
-            alt="Three dancers practicing a choreographed routine in a bright dance studio.">
+nav a {
+    color: #d97c9a;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease,
+        transform 0.3s ease;
+}
 
-        <section>
-            <h2>About Me</h2>
+nav a:hover,
+nav a:focus {
+    background-color: #fff0f5;
+    color: #b85d7a;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
 
-            <p>
-                Outside of <em>school</em>, I enjoy <strong>creating</strong> short-form content,
-                learning new creative skills, and finding ways to combine design with storytelling.
-                I'm excited to continue growing my <mark>web design skills</mark> and learning alongside everyone this semester.
-            </p>
-        </section>
+/* Main Heading */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #222;
+    margin-bottom: 10px;
+}
 
-        <section>
-            <h2>Skills</h2>
+/* Intro Paragraph */
+.intro {
+    max-width: 700px;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 16px;
+}
 
-            <p>
-                Some of my skills include graphic design, video editing, photography,
-                social media management, branding, and content creation.
-            </p>
-        </section>
+/* Image */
+img {
+    display: block;
+    width: 220px;
+    max-width: 100%;
+    margin: 25px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
 
-        <section>
-            <h2>My Hobbies</h2>
+/* Call-to-Action Button */
+.button {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 30px;
+    padding: 12px 24px;
+    background-color: #d97c9a;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
 
-            <ul>
-                <li>Dancing</li>
-                <li>Working Out</li>
-                <li>Cooking</li>
-                <li>Trying New Restaurants</li>
-                <li>Creating Social Media Content</li>
-                <li>Doing Hair & Makeup</li>
-            </ul>
-        </section>
+.button:hover,
+.button:focus {
+    background-color: #b85d7a;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
 
-        <section>
-            <h2>Favorite Links</h2>
+/* Sections */
+section {
+    background-color: #fff5f8;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-            <p>
-                <a href="https://www.linkedin.com/in/desiraetorrence" target="_blank">
-                    My LinkedIn
-                </a>
-            </p>
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
 
-            <p>
-                <a href="https://youtu.be/NZyieze_qHk?si=tKiWRqUDVMyGAOqP" target="_blank">
-                    Favorite Dance Video
-                </a>
-            </p>
+/* Section Headings */
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #d97c9a;
+    margin-bottom: 15px;
+    border-left: 5px solid #d97c9a;
+    padding-left: 12px;
+}
 
-        </section>
+/* Paragraphs */
+p {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
 
-    </div>
+/* Lists */
+ul {
+    margin-left: 20px;
+}
 
-</body>
+li {
+    margin-bottom: 10px;
+}
 
-</html>
+/* Skills List */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 0;
+    list-style: none;
+}
+
+.skills-list li {
+    background-color: white;
+    color: #b85d7a;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Links */
+a {
+    color: #d97c9a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b85d7a;
+    text-decoration: underline;
+}
+
+/* Keyboard Accessibility */
+a:focus-visible {
+    outline: 3px solid #d97c9a;
+    outline-offset: 4px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+        border-radius: 14px;
+    }
+
+    nav {
+        gap: 8px;
+        margin-bottom: 25px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 7px 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .intro {
+        font-size: 15px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .skills-list {
+        gap: 8px;
+    }
+
+    .skills-list li {
+        font-size: 14px;
+    }
+}
