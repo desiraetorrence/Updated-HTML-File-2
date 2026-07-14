@@ -1,240 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desirae Torrence Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<body>
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
-}
+<div class="container">
 
-/* Body */
-body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fdf9fa;
-    color: #333;
-    line-height: 1.6;
-    padding: 40px;
-}
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-/* Main Container */
-.container {
-    max-width: 900px;
-    margin: auto;
-    background-color: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-}
+    <header>
+        <h1>Desirae Torrence</h1>
 
-/* Navigation */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-}
+        <p class="intro">
+            Digital Media student at the University of Central Florida with interests in content creation, graphic design, social media, and digital storytelling.
+        </p>
 
-nav a {
-    color: #d97c9a;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 8px 14px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease,
-        transform 0.3s ease;
-}
+        <img src="YOURIMAGE.jpg" alt="Desirae Torrence">
 
-nav a:hover,
-nav a:focus {
-    background-color: #fff0f5;
-    color: #b85d7a;
-    text-decoration: none;
-    transform: translateY(-2px);
-}
+        <a href="#skills" class="button">Explore My Skills</a>
+    </header>
 
-/* Main Heading */
-h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem;
-    text-align: center;
-    color: #222;
-    margin-bottom: 10px;
-}
+    <main>
 
-/* Intro Paragraph */
-.intro {
-    max-width: 700px;
-    margin: 0 auto 20px;
-    text-align: center;
-    font-size: 16px;
-}
+        <section id="about">
+            <h2>About Me</h2>
 
-/* Image */
-img {
-    display: block;
-    width: 220px;
-    max-width: 100%;
-    margin: 25px auto;
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-}
+            <p>
+                Outside of school, I enjoy creating short-form content, learning new creative skills, and finding ways to combine design with storytelling. I'm excited to continue growing my web design skills and learning alongside everyone this semester.
+            </p>
+        </section>
 
-/* Call-to-Action Button */
-.button {
-    display: block;
-    width: fit-content;
-    margin: 20px auto 30px;
-    padding: 12px 24px;
-    background-color: #d97c9a;
-    color: white;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
+        <section id="skills">
+            <h2>Skills</h2>
 
-.button:hover,
-.button:focus {
-    background-color: #b85d7a;
-    color: white;
-    text-decoration: none;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-}
+            <p>
+                Some of my skills include graphic design, video editing, photography, social media management, branding, and content creation.
+            </p>
 
-/* Sections */
-section {
-    background-color: #fff5f8;
-    padding: 25px;
-    margin-top: 25px;
-    border-radius: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+            <ul class="skills-list">
+                <li>Graphic Design</li>
+                <li>Video Editing</li>
+                <li>Photography</li>
+                <li>Social Media</li>
+                <li>Branding</li>
+                <li>Content Creation</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </section>
 
-section:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
-}
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
 
-/* Section Headings */
-h2 {
-    font-family: 'Poppins', sans-serif;
-    color: #d97c9a;
-    margin-bottom: 15px;
-    border-left: 5px solid #d97c9a;
-    padding-left: 12px;
-}
+            <ul>
+                <li>Dancing</li>
+                <li>Working Out</li>
+                <li>Cooking</li>
+                <li>Trying New Restaurants</li>
+                <li>Creating Social Media Content</li>
+                <li>Doing Hair & Makeup</li>
+            </ul>
+        </section>
 
-/* Paragraphs */
-p {
-    margin-bottom: 18px;
-    font-size: 16px;
-}
+        <section id="contact">
+            <h2>Favorite Links</h2>
 
-/* Lists */
-ul {
-    margin-left: 20px;
-}
+            <p>
+                <a href="https://www.linkedin.com/" target="_blank">My LinkedIn</a>
+            </p>
 
-li {
-    margin-bottom: 10px;
-}
+            <p>
+                <a href="https://www.youtube.com/" target="_blank">Favorite Dance Video</a>
+            </p>
+        </section>
 
-/* Skills List */
-.skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-left: 0;
-    list-style: none;
-}
+    </main>
 
-.skills-list li {
-    background-color: white;
-    color: #b85d7a;
-    padding: 8px 14px;
-    margin-bottom: 0;
-    border-radius: 20px;
-    font-weight: 500;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
-}
+</div>
 
-/* Links */
-a {
-    color: #d97c9a;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #b85d7a;
-    text-decoration: underline;
-}
-
-/* Keyboard Accessibility */
-a:focus-visible {
-    outline: 3px solid #d97c9a;
-    outline-offset: 4px;
-}
-
-/* Mobile Responsive Design */
-@media (max-width: 768px) {
-    body {
-        padding: 15px;
-    }
-
-    .container {
-        padding: 20px;
-        border-radius: 14px;
-    }
-
-    nav {
-        gap: 8px;
-        margin-bottom: 25px;
-    }
-
-    nav a {
-        font-size: 14px;
-        padding: 7px 10px;
-    }
-
-    h1 {
-        font-size: 2rem;
-        line-height: 1.2;
-    }
-
-    h2 {
-        font-size: 1.25rem;
-    }
-
-    .intro {
-        font-size: 15px;
-    }
-
-    img {
-        width: 100%;
-        max-width: 260px;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    .skills-list {
-        gap: 8px;
-    }
-
-    .skills-list li {
-        font-size: 14px;
-    }
-}
+</body>
+</html>
