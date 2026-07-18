@@ -36,7 +36,7 @@ body {
     background: white;
     padding: 40px;
     border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 /* ==========================
@@ -72,6 +72,15 @@ nav a:hover {
 
 header {
     text-align: center;
+    padding: 20px 0;
+}
+
+.eyebrow {
+    color: #d97c9a;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
 }
 
 h1 {
@@ -83,8 +92,7 @@ h1 {
 
 .intro {
     max-width: 700px;
-    margin: auto;
-    margin-bottom: 25px;
+    margin: 0 auto 25px;
 }
 
 /* ==========================
@@ -96,8 +104,8 @@ img {
     display: block;
     margin: 20px auto;
     border-radius: 15px;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-    transition: .3s ease;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
 }
 
 img:hover {
@@ -105,7 +113,7 @@ img:hover {
 }
 
 /* ==========================
-   BUTTON
+   BUTTONS
 ========================== */
 
 .button {
@@ -115,14 +123,39 @@ img:hover {
     background: #d97c9a;
     color: white;
     text-decoration: none;
+    border: 2px solid #d97c9a;
     border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
     font-weight: 600;
-    transition: .3s ease;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .button:hover {
     background: #b85d7a;
+    border-color: #b85d7a;
+    color: white;
     transform: translateY(-3px);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.secondary-button {
+    background: white;
+    color: #d97c9a;
+}
+
+.secondary-button:hover {
+    background: #fff0f5;
+    color: #b85d7a;
 }
 
 /* ==========================
@@ -134,12 +167,12 @@ section {
     padding: 25px;
     margin-top: 25px;
     border-radius: 15px;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 section:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
 }
 
 /* ==========================
@@ -154,6 +187,12 @@ h2 {
     margin-bottom: 15px;
 }
 
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #d97c9a;
+    margin-bottom: 10px;
+}
+
 /* ==========================
    PARAGRAPHS
 ========================== */
@@ -164,7 +203,35 @@ p {
 }
 
 /* ==========================
-   HOBBIES LIST
+   PROJECT CARDS
+========================== */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.11);
+}
+
+.project-card p {
+    margin-bottom: 0;
+}
+
+/* ==========================
+   LISTS
 ========================== */
 
 ul {
@@ -183,7 +250,7 @@ li {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 14px;
     margin-top: 15px;
     margin-left: 0;
 }
@@ -191,17 +258,71 @@ li {
 .skills-list li {
     background: white;
     color: #d97c9a;
-    padding: 8px 14px;
-    border-radius: 20px;
+    padding: 10px 18px;
+    border-radius: 30px;
     font-weight: 600;
     margin-bottom: 0;
-    box-shadow: 0 3px 8px rgba(0,0,0,.06);
-    transition: .3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease;
 }
 
 .skills-list li:hover {
     background: #d97c9a;
     color: white;
+    transform: translateY(-2px);
+}
+
+/* ==========================
+   MORE ABOUT ME BOX
+========================== */
+
+#more-about-me {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-left: 5px solid #d97c9a;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
+}
+
+#more-about-me p {
+    margin-bottom: 0;
+}
+
+/* Keeps the section hidden until JavaScript opens it */
+#more-about-me[hidden] {
+    display: none;
+}
+
+/* ==========================
+   CONTACT LINKS
+========================== */
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.contact-links a:not(.button) {
+    text-decoration: none;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #f1d7df;
+}
+
+footer p {
+    margin-bottom: 8px;
 }
 
 /* ==========================
@@ -211,7 +332,7 @@ li {
 a {
     color: #d97c9a;
     font-weight: 600;
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
 a:hover {
@@ -222,7 +343,8 @@ a:hover {
    ACCESSIBILITY
 ========================== */
 
-a:focus-visible {
+a:focus-visible,
+button:focus-visible {
     outline: 3px solid #d97c9a;
     outline-offset: 4px;
 }
@@ -231,47 +353,55 @@ a:focus-visible {
    RESPONSIVE DESIGN
 ========================== */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-    body{
-        padding:20px;
+    body {
+        padding: 20px;
     }
 
-    .container{
-        padding:25px;
+    .container {
+        padding: 25px;
     }
 
-    nav{
-        gap:10px;
+    nav {
+        gap: 10px;
     }
 
-    nav a{
-        font-size:14px;
-        padding:8px 12px;
+    nav a {
+        font-size: 14px;
+        padding: 8px 12px;
     }
 
-    h1{
-        font-size:2.2rem;
+    h1 {
+        font-size: 2.2rem;
     }
 
-    h2{
-        font-size:1.3rem;
+    h2 {
+        font-size: 1.3rem;
     }
 
-    .intro{
-        font-size:15px;
+    .intro {
+        font-size: 15px;
     }
 
-    img{
-        width:180px;
+    img {
+        width: 180px;
     }
 
-    section{
-        padding:20px;
+    section {
+        padding: 20px;
     }
 
-    .skills-list{
-        justify-content:center;
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 
+    .skills-list {
+        justify-content: center;
+    }
+
+    .hero-buttons,
+    .contact-links {
+        justify-content: center;
+    }
 }
